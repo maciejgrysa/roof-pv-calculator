@@ -64,28 +64,14 @@ Project files are downloaded and loaded locally in the browser.
 - optional Google mapping/solar APIs
 - optional Anthropic vision workflow
 
-## Run locally
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-uvicorn main:app --host 127.0.0.1 --port 8001 --reload
-```
-
-Open:
-
-```text
-http://127.0.0.1:8001/
-```
-
-The 3D creator and synthetic catalogues can be inspected without production customer data. Features relying on external APIs require your own API keys.
-
 ## Security note
 
 Do not commit API keys. Use `.env`, which is ignored by Git.
 
+## Source access
+
+The complete implementation is kept in a private source archive. For serious commercial discussions, a live walkthrough, architecture review, or controlled private code review can be arranged.
+
 ## Usage and licensing
 
-This repository is source-available for portfolio evaluation. You may inspect the code and run an unmodified local copy for evaluation, but commercial use, redistribution, republishing and derivative distribution are not permitted without written permission. See [LICENSE.md](LICENSE.md).
+This repository is source-available for portfolio evaluation. You may inspect the code and run an unmodified local copy for evaluation, but commercial use, redistribution, republishing and derivative distribution are not permitted without written permission. See [PROPRIETARY-NOTICE.md](PROPRIETARY-NOTICE.md).
